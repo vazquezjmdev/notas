@@ -1,0 +1,5 @@
+- ansible debian1 -i maquinas -m copy -a "src=prueba.txt dest=/tmp/prueba.rxr mode=777"
+- ansible roky01 -i maquinas -m yum -a "name=httpd state=present"
+- ansible roky01 -i maquinas -m service -a "name=httpd state=started
+- ansible debian -i maquinas -m apt -a "name=apache2 state=present"
+- ansible roky01 -i maquinas -m service -a "name=apache2 state=started"

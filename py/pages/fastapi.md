@@ -1,0 +1,28 @@
+- Fuente
+	- https://www.youtube.com/watch?v=N5VjIqAsDQ8&t=788s
+	-
+- Entorno virtual
+	- python3 -m venv vcrud
+	- source ./vcrud/bin/activate
+		- -> (vcrud) vazquez@localhost:~/cursopy/00_fastapi/crud>
+	-
+- git
+	- git config --global init.defaultBranch main
+	- git config --global user.name "vazquezjm67"
+	- git config --global user.email "vazquezjm67.gmail.com"
+	- git init
+	- .gitignore
+		- /vcrud/
+		  _ _ _pycache_ _ _
+		-
+		-
+	-
+- dependecias
+	- pip install uvicorn fastapi
+	- control de lo que necesitamos
+		- pip freez3e >requeriments.txt
+- empezar -arrancar
+	- uvicorn main:app --reload
+	-
+-
+	-

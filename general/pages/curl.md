@@ -1,0 +1,7 @@
+- curl https://httpbin.org/get
+- curl "https://httpbin.org/get?name=cody&curso=python"
+- curl -X GET "https://httpbin.org/get?name=cody&curso=python" -H "accept: application/json" aceptamos json como respuesta
+- curl -X GET "https://httpbin.org/get?name=cody&curso=python" -H "accept: application/json"  -i
+- curl -X POST https://httpbin.org/post
+- curl -X POST https://httpbin.org/post -d '{"username": "eduardo_gpg","password": "Abc123.."}'
+- curl -X PUT https://httpbin.org/put  -d '{"username": "eduardo_gpg","password": "Abc123.."}' -H "accept: application/json" -i

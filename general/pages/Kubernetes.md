@@ -1,0 +1,25 @@
+- -o wide
+- kb create
+- kb delete
+- kb apply
+	- kb apply -f fichero.yaml
+- kb get
+	- -output formato
+		- -o yaml
+		- -o json
+- kb edit
+	- kubectl edit deployment mailhog
+- Esqueleto para despliegues
+	- --dry-run
+		- ```
+		  kubectl create deployment mailhog --image mailhog/mailhog \ 
+		           --dry-run=client -o yaml > mailhog-deployment.yaml
+		  ```
+- Idenpotencia / reentrada
+	- fenomeno unchanged
+		- eliminar los campos del deployment
+			- creationTimestamp
+			- strategy
+			- ressources
+			- status
+-
