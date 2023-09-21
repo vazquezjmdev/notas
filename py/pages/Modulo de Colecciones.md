@@ -1,0 +1,20 @@
+## Counter
+- from collections import Counter
+	- Counter(l) -diccionario de acumulados
+	- c=Counter(cadena_frase.split())
+	- t=c.most_common(1) -> tupla con el más comun, sin el número da una lista de tuplas de mas a menos comun.
+	- c.item() lista de tuplas
+	- c.keys()
+	- c.values
+	- sum(c.values)
+- from colections import defaultdict()
+	- d = defaultdict(int)
+- from collection import OrderedDict
+	- d = OrdenedDict() ->diccionario ordenado segun el orden de creaccion
+- from collection import namedtuple
+	- Persona = namedtuple('Persona', 'nombre apellido edad')
+	- p = Persona((nombre="hector", apellido="costa",edad=27)
+	-
+	-
+	-
+	-

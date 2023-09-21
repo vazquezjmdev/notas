@@ -1,0 +1,7 @@
+- kubectl expose deployment/mailhog --port 1025,8025
+- kubectl exec -it mailhog-nombre_pod sh
+- Para ver que funciona el DNS
+	- getent hosts mailhog
+- [[Si no hay shell]]
+- kubectl -n kube-system exec -it storage-provisioner sh
+-

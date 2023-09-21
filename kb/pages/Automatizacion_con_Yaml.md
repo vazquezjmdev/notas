@@ -7,6 +7,7 @@
 	- watch kubectl get pods
 	  kubectl logs -c nombre contenedor
 	- kubectl port-forward mailhog-5dbc9c86c4-gsbk6 8025
+	  kubectl port-forward deployment/mailhog 8025
 	-
 - ### Esqueleto para un despliegue
 	- kubectl create deployment mailhog --image mailhog/mailhog --dry-run=client -o yaml

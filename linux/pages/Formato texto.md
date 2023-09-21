@@ -1,0 +1,14 @@
+- tail passwd|  grep ^a los que comiencen por a
+- grep  Listen -iR /etc/apache2/* | grep -v # | uniq ->el grep -v #  elimina las lineas de comentarios
+- tail |  grep ^a  | cut -d: f6 | xargs du -sh
+- grep login.*root /var/auth.log
+- wc -l *.php | sort
+- cat *.php | wc -l
+- sed -e 's/\$version/\$VRS/g' fichero.php
+- echo
+	- -e interpreta comandos especiales que estan seguidos de la contrabarra \t \n
+	- "rutas=>$PATH" se interpretan las variables
+	-
+	-
+-
+-

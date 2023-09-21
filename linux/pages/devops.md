@@ -1,0 +1,15 @@
+- mkdir -p /1/2/3
+- cp -p org dst
+- cp -r org futuro
+- grep
+- curl -o file.html www.google.com
+	- curl -O pag-htmlo fichero
+		- -v comunicacion que se produce
+		- -L  seguir en rediciones
+		- --limite-rate 1M
+		- -C - recupera la descarga desde donde se quedo
+		- -I ver solo las cabeceras
+		- -D fichero para guardar las en un fichero y por otro lado la respuesta
+		- -A --userr-agent
+		-
+		-

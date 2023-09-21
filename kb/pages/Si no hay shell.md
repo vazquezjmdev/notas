@@ -1,0 +1,8 @@
+- kubectl -n kube-system exec -it storage-provisioner sh
+- La mejor opción es  conectarse  a un shell dedicado
+	- busybox/netshoot
+	- nicolaka/netshoot.
+- Pod efimero
+	- Esta funcionalidad debe estar habilitada 1.23 esta
+	- kubectl debug mailhog-b69794cd7-9zdpj -it --image=alpine
+	-
