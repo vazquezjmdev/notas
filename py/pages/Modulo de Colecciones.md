@@ -15,6 +15,55 @@
 	- Persona = namedtuple('Persona', 'nombre apellido edad')
 	- p = Persona((nombre="hector", apellido="costa",edad=27)
 	-
+- ## Datetime/
+	-
+	- import datetime
+	- dt = datetime.datetime.now()
+		- dt.year
+		- dt.month
+		- dt.day
+		- dt.hour
+		- dt.minite
+		- dt.second
+		- dt.tzinfo
+	- dt=datetime.datetime(200, 1, 1, 0, 0)
+	- dt = dt.replace(year=3000)
+	- dt.isoformat()
+		- import locale
+		- locale.setlocale(locale.LC_ALL, 'es-ES')
+			- dt.strtime(%A %d  de %B %Y %I: %M
+	- dtcalculado= datetime.timedelta(day=14, hours=4)
+	- dentro_de_dossemanas(dtahora + dtcalculado)
+- pip3 install pytz
+	- import pytz
+	- pytz.all_timezones
+	- dt = datetime.datetime.now(pytz.timezone('Asia/Tokio)
+- # math
+	- import math
+		- pi=3.14159
+			- round(pi) clasica
+			- math.floor() redondeo a la baja
+			- math.ceil() alza
+		- abs() valor absoluto
+		- sum(l) sumatorio lista
+		- math.fsum() saca un flotante
+		- math.trunc(100.123456)
+		- math.pow(2,4)
+		- math.sqrt(9)
+		- math.pi
+		- math.e
+- ## random
+- import random
+	- random.random() >=0 y < 1 flotante
+	- random.uniform(1,10) >=0 y <10 flotante
+	- random.randrange(0,100,2) salen int pares
+- random.choice(cadena/listas)
+- random.shuffle(lista) drsordena la lista
+- random.sample(lista,2) dos aleatorios
+-
+	-
+	-
+	-
 	-
 	-
 	-
