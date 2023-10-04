@@ -1,0 +1,4 @@
+- instalar en linux mint
+	- https://linuxiac.com/how-to-install-docker-on-linux-mint-21/
+-
+-
