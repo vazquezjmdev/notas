@@ -1,0 +1,42 @@
+- dk diff name_contenedor
+- Generar una imagen a partir de un contendor
+	- dk commit contendor name_imagen
+- dk image inspect name
+- las capas /var/lib/docker/overlay2(drv almacenamiento)/
+- ## Dockerfile/
+- docker build -t imagen python:v1 . (contexto, puede ser url)
+- FROM (imagen padre) ubuntu
+- RUN apt-get update
+- RUN apt-get install -y python -> no puede haber comando imperativo
+- RUN echo 1.0 >> /etc/version && apt-get install -t git \
+	- && apt-get install -y iputils-ping (resumen )
+- CMD (/bin/sh-c ) comando se arranca al ejecutar el contendor
+	- CMD echo
+- exec
+	- CMD ["echo", "welcome tu container"]
+- ENTRYPOINT ["/bin/bash"] -> lo ejecuta y si pongo algo mas lo añade como parametro
+- los dos
+	- ENTRYPOINT ["ping ", "-c","3"]
+	- CMD ["localhost"] (para modificar)
+	- --entrypoint comando
+- WORKDIR /opt/app directorio de trabajo o ambito
+- COPY index.html .(wd)
+- ADD docs docs
+- ADD f* /datos/
+- ADD f.tar .
+- ADD url .
+- ENV
+	- --env x='pwd'
+	- ENV dir=/data dir1=/data1
+	- RUN mkdir $dir
+- ENV TEXTO="hola" ->pueden modificar en el docker run -e TEXTO="adios"
+- dk build -t image local.io/vazquez/image:v6 --build-arg dir2=/data .
+- Pasar en tiempo de build un dato
+	- ARG user
+	- ENV user_docker $user
+	-
+	-
+- docker commit contenedor image
+- docker image save -o imagen.tar
+- docker image load -i imagen.tar
+-

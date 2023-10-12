@@ -1,0 +1,5 @@
+- --restart al arranque
+	- on-failure[max-retries]
+	- always arranca siempre que no lo haga mano(al rebote de docker se arranca aunque fuera a mano)
+	- unless-stopped al arrancar se queda
+	- no predefinida si para para

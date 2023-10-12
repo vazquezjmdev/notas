@@ -1,0 +1,11 @@
+- DeploymentsConfigs añaden Replication Controler (rc)
+- oc deploymentconfig apache-dc --image = httpd
+- oc get dc
+- oc get rc
+- oc get pod
+- oc get svc
+- oc get route
+- dar vida au deploymentconfig
+	- servicio
+		- oc expose --name=apache-dc-svc deploymentconfig apache-dc --port=80
+		- oc expose svc apache-dc-svc --name ruta-apache-svc

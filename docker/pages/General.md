@@ -1,4 +1,15 @@
 - instalar en linux mint
 	- https://linuxiac.com/how-to-install-docker-on-linux-mint-21/
+- Interativo
+	- dk exec name_contenedor commando
+	- dk exect -i name_contenedor bash(/bin/sh
+	- dk attach name_contenedor ->saca lo que este enviando en  ese momento por consola
+	-
 -
+- docker run -it --rm --name ubu:v1 ubuntu
+- docker image history imagen
+- docker rmi image:v1
+- docker run -it --rm image:v2 ls (se como el CMD)
+- docker rm contenedor
+- docker run -it --rm --env x=10 image:v4
 -
