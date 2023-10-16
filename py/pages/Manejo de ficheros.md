@@ -36,4 +36,12 @@
 	- fichero.seek(0)
 	- fichero.writelines(lineas)
 -
-	-
+- Ficheros binarios
+	- import pickle
+	  lista = [1,2,6,9]
+	  fichero = open('lista.pckl', 'wb')
+	  pickle.dump(lista,fichero)
+	- fichero = open('lista.pckl', 'rb')
+	  listar= pickle.load(fichero)
+	  print(listar)
+	- fichero.seek(0)
