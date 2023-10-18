@@ -1,0 +1,7 @@
+- |bd|bd|
+- |tabla|coleccion|
+- |indice|indice|
+- |fila|documento|
+- |columna|campo|
+- |joinns|integrados en documentos|
+-
