@@ -1,0 +1,12 @@
+- minikube start --driver=docker
+- minikube config set driver docker
+- minikube start --driver=docker -p test1 --cpus=2 --memory=2048
+- minikube start --driver=docker -p test1 --cpus=4 --memory=16894
+- kb config current-context
+- minikube profile test1
+- kb config current-context test1
+- minikube dashboard
+- https://dzone.com/articles/install-docker-kubernetes-and-minikube-on-linux-mi
+-
+- [[Donde va eso]]
+-

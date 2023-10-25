@@ -1,0 +1,2 @@
+- https://ricardomgi.medium.com/mejore-su-flujo-de-trabajo-con-python-c%C3%B3mo-configurar-y-utilizar-entornos-virtuales-cdecedf4305a
+- https://linuxhostsupport.com/blog/how-to-install-and-switch-python-versions-on-ubuntu-22-04/

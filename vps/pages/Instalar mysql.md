@@ -1,0 +1,7 @@
+- sudo  apt install mysql-server
+- sudo mysql_secure_installation
+- CREATE USER sagibus_eu@localhost IDENTIFIED BY 'xpassword';
+- select user, host, plugin from mysql.user;
+- CREATE DATABASE sagibus_eu;
+- GRANT ALL PRIVILEGES ON sagibus_eu.* TO sagibus_eu@localhost;
+- FLUSH PRIVILEGES;

@@ -1,0 +1,14 @@
+- apt install fail2ban
+- /etc/fail2ban
+	- jail.conf
+	- sudo nano jail.local
+		- [DEFAULT]
+			- bantime = 1h
+			- maxretry = 3
+		- [sshd]
+			- enable = true
+- sudo fail2ban-client status
+- sudo systemctl restart fail2ban.service
+- sudo fail2ban-client status sshd
+- sudo fail2ban-client set sshd unbanip x.x.x.x
+- sudo systemctl stop fail2ban.service

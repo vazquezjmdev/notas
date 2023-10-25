@@ -1,0 +1,15 @@
+- Son permanentes
+- Mantienen la misma ip
+- Agrupan pods
+- Ocurre automaticamente bajo ciertas reglas
+- se reconfiguran con los nuevos pods o cuando desaparecen
+- labels importante
+- kb expose pod/mysql --name mysql --port 3306
+- kb delete -f .
+- kb get svc
+- kb get endpoints
+- el dns de kubernete funciona con el nombre DNS
+- los pod que esten debajo de un servicio tinen que tener sus labels
+- kb create -f .
+- k run --image busybox bb -it --restart Never -rm
+-

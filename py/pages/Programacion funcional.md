@@ -1,0 +1,4 @@
+- Las funciones son ciudadanos de primer orden
+- Las funciones se pueden pasar como parametros
+- Existen las funciones recursivas
+-

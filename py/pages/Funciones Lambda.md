@@ -1,0 +1,5 @@
+- lambda <paramer_list>:<expresion>
+- lambda x: x%2 == 0
+- callable( lambda s: s[::-1]) -> es
+- lambda_reverse = lambda s: s[::-1]
+- (lambda x: (x, x **2, x**3))(3)

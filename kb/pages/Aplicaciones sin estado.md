@@ -1,0 +1,44 @@
+- Pods inmutable una vez creado no se modifican una vez creados
+- Pods son transitorios(no hay nada que garantize que viven para siempre, son efimeros)
+- No se pueden mover entre nodos, se crean y destruyen
+- scheduler coloca los pod balancenado su inicio(arrancadolos por carga), una vez asignado se queda para siempre
+- kb run nginx --image nginx -o yaml --dry-run=cliente > nginx.yaml
+- kb create -f pods nginx.yaml
+- kb delete -f nginx.yaml
+- kb delete pods nginx
+- kb run no puede crear pods  de mas de un contendor
+- spec:
+	- containers:
+		- -  image: nginx
+			- name: nginx
+			- env:
+			- ...
+	-
+- el campo containers es un array
+- kb describe pods nginx
+- kb logs  nginx -c wordpress
+- k exect -it -c nginx nginx -- /bin/sh
+- k exect -it -c wordpress nginx -- /bin/sh
+- Pod varios contendores
+	- si escalan juntos si podrian ir en el mismo pod
+	- api + cache
+	- sidecar proporciona cosas adicionales al principal
+		- apli vieja + contenedor que almacena log ->tail -f(sacar los log a la salido extandar)
+		- saicar proxy, conenedor proxy de otro contenedor
+- Etado pod
+	- Completado
+	- Muere o termina -> crear otro identico
+	- Borrado
+- get pod -w
+	- kb get pods -o wide
+- [[Servicios]]
+-
+	-
+	-
+	-
+	-
+-
+-
+-
+-
+-
