@@ -1,0 +1,7 @@
+- cat fichero
+- tail fichero | grep â | cut -d: -f6 | xargs du -sh
+- grep Listen -iR /etc/apache2/* | grep -v "#" | uniq
+- grep login .*root /var/log/auth.log
+- wc -l *.php | sort -n
+-
+-

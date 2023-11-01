@@ -1,0 +1,12 @@
+- - https://linuxgenie.net/install-and-configure-ansible-on-linux-mint/
+- ansible-config init --disabled > ansible.cfg
+- inventario
+- web ansible_host=sagibus.eu ansible_user=ansible ansible_ssh_private_key_file=~/.ssh/ansiblemivps
+-
+- - otro ansible cfg que solo sobreescribe unos datos
+- #+BEGIN_EXAMPLE
+  - [defaults]
+  	- inventory   = ~/ansible/hosts
+  	- remote_user  =  ansible
+  	- private_key_file  =  ~ /.ssh/privada
+  #+END_EXAMPLE
